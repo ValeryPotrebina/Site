@@ -38,7 +38,6 @@ hr {
     height: 100vh;
     background: url("../asserts/images/intro.jpg") center no-repeat;
     /* background: rgb(25, 0, 255); */
-    /* opacity: 0.5; */
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -589,3 +588,82 @@ z-index: 1;
 /* Cтрелочка */
 
 
+.section--gray {
+    background-color: #f8f8f8;
+}
+
+/* Reviews */
+
+.reviews {
+    padding: 0 110px;
+    position: relative;
+}
+.reviews__item {
+    padding-left: 205px;
+    position: relative;
+}
+
+.reviews__photo{
+    border: 2px solid #95e1d3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews__text{
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    color: #999;
+}
+
+.reviews__author {
+    font-size: 24px;
+    color: black;
+    font-family: 'Kausan Script', cursive;
+}
+
+.reviews__author::before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    background-color:#f38181;
+    margin-right: 10px;
+}
+
+.reviews__btn { 
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.reviews__btn::after{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #ccc;
+    border-left:  2px solid #ccc;
+    z-index: 1;
+
+    /*  */
+    
+}
+
+.reviews__btn--prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+.reviews__btn--next {
+    right: 0;
+    transform: rotate(135deg);
+    
+}
