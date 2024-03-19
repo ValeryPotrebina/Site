@@ -7,7 +7,7 @@ $(document).ready(function () {
 /*Fixed header*/
 $(function () {
     var header = $("#header"),
-        introH = $("#intro").innerHeight(),
+        introH = $("#header").innerHeight(),
         scrolloffset = $(window).scrollTop();
     // scrolloffset - сколько проскролили страницу 
     checkScrool(scrolloffset);
